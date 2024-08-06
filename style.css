@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://via.placeholder.com/1600x900?text=Background');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+header h1 {
+    margin: 20px 0;
+    color: #00796b;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 110px);
+    padding: 12px;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1em;
+    outline: none;
+}
+
+input:focus {
+    border-color: #004d40;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #00796b;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f8e9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task-text {
+    flex: 1;
+    color: #004d40;
+    font-size: 1em;
+}
+
+.completeBtn {
+    background: #66bb6a;
+    border: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.completeBtn:hover {
+    background: #388e3c;
+    transform: scale(1.05);
+}
+
+.removeBtn {
+    background: #ef5350;
+    border: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.removeBtn:hover {
+    background: #c62828;
+    transform: scale(1.05);
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #757575;
+}
